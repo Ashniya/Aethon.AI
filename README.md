@@ -111,20 +111,20 @@ Investment Committee (Growth, Value, Skeptic, Risk)
 Here is a look at the system in action:
 
 **Landing Page & Features:**
-![Landing Page Dark](screenshots/Landing%20Page-Dark%20mode.png)
-![How it works](screenshots/How%20it%20works.png)
+![Landing Page Dark](Screenshots/Landing%20Page-Dark%20mode.png)
+![How it works](Screenshots/How%20it%20works.png)
 
 **Company: Tesla (TSLA)**
 **Result:** HOLD / INVEST (Debated)
 *Below are snapshots of the multi-agent debate, final verdict, scenario simulators, and persona analyses applied to Tesla.*
 
-![Verdict](screenshots/verdict-tesla.png)
-![Research Dashboard](screenshots/Research%20dashboard.png)
-![Bull vs Bear](screenshots/Bull%20vs%20bear-tesla.png)
-![Time Machine](screenshots/Time%20machine-tesla.png)
-![Scenarios](screenshots/scenarios-tesla.png)
-![Personas](screenshots/personas-tesla.png)
-![Portfolio Fit](screenshots/Portfolio-fit%20Tesla.png)
+![Verdict](Screenshots/verdict-tesla.png)
+![Research Dashboard](Screenshots/Research%20dashboard.png)
+![Bull vs Bear](Screenshots/Bull%20vs%20bear-tesla.png)
+![Time Machine](Screenshots/Time%20machine-tesla.png)
+![Scenarios](Screenshots/scenarios-tesla.png)
+![Personas](Screenshots/personas-tesla.png)
+![Portfolio Fit](Screenshots/Portfolio-fit%20Tesla.png)
 
 ## What I'd Improve (Future Goals)
 - Real-time stock prices using TradingView or WebSockets
