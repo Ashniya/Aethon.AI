@@ -1,6 +1,6 @@
 # Aethon AI - Investment Research Agent
 
-**Live Deployment:** [Insert Vercel Link Here]
+**Live Deployment:** [https://aethon-ai-eight.vercel.app/]
 
 ## Overview
 Aethon AI is an explainable multi-agent investment research platform that analyzes a company using multiple AI analysts before producing an investment recommendation.
