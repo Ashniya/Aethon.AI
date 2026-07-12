@@ -1,0 +1,114 @@
+.box-nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.box-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: transparent;
+}
+
+.box-nav-items {
+  display: flex;
+}
+
+.box-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+.box-list::-webkit-scrollbar {
+  display: none;
+}
+
+.box-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: background 0.3s, border-color 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.box-item.is-active {
+  background: var(--active-bg, #3b82f6);
+  border-color: var(--active-bg, #3b82f6);
+}
+
+.box-item.light-mode { background: rgba(0, 0, 0, 0.05); border-color: rgba(0, 0, 0, 0.1); }
+
+.box-item.light-mode.is-active { background: #000; border-color: #000; }
+
+.hover-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--hover-bg, rgba(255,255,255,0.1));
+  pointer-events: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scale(0);
+  z-index: 0;
+}
+
+.label-stack {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 1;
+  overflow: hidden;
+  height: 24px;
+}
+
+.box-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-color, #9ca3af);
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.box-item.is-active .box-label {
+  color: #fff;
+}
+
+.box-item.light-mode .box-label { color: #000; } .box-item.light-mode .box-label-hover { color: #000; }
+
+.box-item.light-mode.is-active .box-label { color: #fff; } .box-item.light-mode.is-active .box-label-hover { color: #fff; }
+
+.box-label-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  white-space: nowrap;
+}
+

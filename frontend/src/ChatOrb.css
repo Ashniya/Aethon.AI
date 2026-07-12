@@ -1,0 +1,93 @@
+/* Floating Orb styles */
+#orb {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: orbFloat 4s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#orb .ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: orbSpin 8s linear infinite;
+  filter: blur(2px);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+#orb:hover .ring {
+  filter: blur(4px) brightness(1.2);
+  transform: scale(1.05);
+}
+
+#orb.dark-mode .ring {
+  background: conic-gradient(
+    #3b82f6, #60a5fa, #93c5fd, #3b82f6
+  );
+}
+
+#orb.light-mode .ring {
+  background: conic-gradient(
+    #2563eb, #3b82f6, #60a5fa, #2563eb
+  );
+}
+
+#orb .center {
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#orb.dark-mode .center {
+  background: #0d1a2d;
+}
+
+#orb.light-mode .center {
+  background: #ffffff;
+}
+
+/* Eyes */
+#orb .eyes {
+  display: flex;
+  gap: 8px;
+}
+
+#orb .eye {
+  width: 5px;
+  height: 12px;
+  border-radius: 5px;
+  transition: height 0.15s, transform 0.1s ease-out;
+}
+
+#orb.dark-mode .eye {
+  background: white;
+}
+
+#orb.light-mode .eye {
+  background: #2563eb;
+}
+
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes orbSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
